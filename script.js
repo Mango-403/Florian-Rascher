@@ -1,6 +1,6 @@
 const quizData = {
     "Wie nennt man die kleinste Informationseinheit im Computer?": "Bit",
-    "Welches Zahlensystem besteht nur aus 0 und 1?": "Binärsystem", "Binär",
+    "Welches Zahlensystem besteht nur aus 0 und 1?": "Binärsystem",
     "Wie heißt das 'Gehirn' des Computers (Abkürzung)?": "CPU",
     "Welches Protokoll wird für das Laden von Webseiten verwendet?": "HTTP",
     "Wie nennt man eine Fehlersuche in einem Programm?": "Debugging",
