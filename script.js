@@ -15,10 +15,10 @@ let cities = Object.keys(quizData);
 let currentIndex = 0;
 let score = 0;
 
-// Städte mischen
+
 cities.sort(() => Math.random() - 0.5);
 
-// DOM Elemente
+
 const questionText = document.getElementById('question-text');
 const userInput = document.getElementById('user-input');
 const feedback = document.getElementById('feedback');
@@ -41,7 +41,7 @@ function checkAnswer() {
     const answer = userInput.value.trim().toLowerCase();
     const correctAnswer = quizData[cities[currentIndex]].toLowerCase();
 
-    if (answer === "") return; // Ignoriere leere Eingaben
+    if (answer === "") return; 
 
     if (answer === correctAnswer) {
         score++;
@@ -55,7 +55,7 @@ function checkAnswer() {
     scoreDisplay.innerText = score;
     currentIndex++;
 
-    // Button deaktivieren während der Pause
+ 
     submitBtn.disabled = true;
 
     setTimeout(() => {
@@ -72,7 +72,7 @@ function showResults() {
     document.getElementById('final-score').innerText = `Du hast ${score} von ${cities.length} Punkten erreicht (${percent}%).`;
 }
 
-// Event Listener
+
 submitBtn.addEventListener('click', checkAnswer);
 
 userInput.addEventListener("keypress", (event) => {
@@ -81,5 +81,5 @@ userInput.addEventListener("keypress", (event) => {
     }
 });
 
-// Initialer Start
+
 loadQuestion();
