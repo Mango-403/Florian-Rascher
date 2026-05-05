@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Städte-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>🌍 Städte-Quiz</h1>
+    
+    <div id="game-ui">
+        <div class="stats">
+            <span>Frage: <span id="current-num">1</span>/10</span>
+            <span>Score: <span id="score">0</span></span>
+        </div>
+
+        <div class="question-box">
+            <p id="question-text">In welchem Land liegt ...?</p>
+            <input type="text" id="user-input" placeholder="Land eingeben..." autocomplete="off">
+            <br>
+            <button id="submit-btn">Antworten</button>
+        </div>
+
+        <div id="feedback"></div>
+    </div>
+
+    <div id="result-ui" class="hidden">
+        <h2>Quiz beendet!</h2>
+        <p id="final-score"></p>
+        <button onclick="location.reload()">Nochmal spielen</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
